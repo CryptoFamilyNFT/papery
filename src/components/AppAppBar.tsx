@@ -189,9 +189,7 @@ function AppAppBar({ mode, ds, toggleColorMode, balance, context }: AppAppBarPro
                             >
                                 <MenuTwoToneIcon sx={(theme) => ({ color: theme.palette.mode === 'light' ? theme.palette.secondary.dark : theme.palette.secondary.dark })} />
                             </Button>
-                            {ds !== undefined && ds !== null && (
-                                <Typography variant='body1' color={"secondary"}>{ds[0]?.priceUsd}</Typography>
-                            )}
+                            
                             <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
                                 <Box
                                     sx={{

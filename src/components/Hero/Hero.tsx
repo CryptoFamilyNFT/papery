@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
     return (
         <Grid container sx={(theme) => ({
             backgroundColor: theme.palette.mode === 'light' ? 'rgba(0,0,0, 0.2)' : '#000',
-            height: 600,
+            height: 750,
             backgroundImage: theme.palette.mode === 'light' ? `url(${weird_black})` : `url(${weird_black})`,
             backgroundSize: "cover",
             border: theme.palette.mode === 'light' ? `2px solid ${primary}` : `2px solid ${dark}`,
